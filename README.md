@@ -65,7 +65,7 @@ Adding options
     </executions>
 </plugin>
 ```
-This will start RabbitMQ bound on port ```3321``, with the container name ```jon```
+This will start RabbitMQ bound on port ```3321```, with the container name ```jon```
 and using the image ```rabbitmq:3```
 
 ### Caveats
