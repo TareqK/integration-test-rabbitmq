@@ -1,4 +1,5 @@
 # integration-test-rabbitmq
+![Maven Central](https://maven-badges.herokuapp.com/maven-central/me.kisoft/integration-test-rabbitmq/badge.png)
 
 This Maven plugin allows you to start and stop a RabbitMQ Docker instance as part
 of your build. This is especially useful if you want to do integration testing, 
