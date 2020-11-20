@@ -83,7 +83,7 @@ public class StartRabbitMQMojo extends AbstractMojo {
                     .exec().getId();
             System.out.println("Created RabbitMQ container with name " + name);
             System.out.println("Starting RabbitMQ instance on port " + port);
-            docker.startContainerCmd(id);
+            docker.startContainerCmd(id).exec();
             System.out.println("Started RabbitMQ instance on port " + port);
             State.instance().setContainerId(id);
         } catch (InterruptedException ex) {

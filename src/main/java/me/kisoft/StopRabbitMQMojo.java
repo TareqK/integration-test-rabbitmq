@@ -21,7 +21,7 @@ public class StopRabbitMQMojo extends AbstractMojo {
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
         System.out.println("Starting RabbitMQ container with name " + State.instance().getName());
-        docker.stopContainerCmd(State.instance().getContainerId());
+        docker.stopContainerCmd(State.instance().getContainerId()).exec();
         System.out.println("Stopped RabbitMQ container with name " + State.instance().getName());
         System.out.println("Removing RabbitMQ container with name " + State.instance().getName());
         docker.removeContainerCmd(State.instance().getContainerId()).exec();
