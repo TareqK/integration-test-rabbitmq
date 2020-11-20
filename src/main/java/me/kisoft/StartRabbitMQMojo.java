@@ -53,7 +53,7 @@ public class StartRabbitMQMojo extends AbstractMojo {
      */
     @Getter
     @Setter
-    @Parameter(property = "name", required = false, defaultValue = "Random Alphanumeric String")
+    @Parameter(property = "name", required = false)
     private String name = RandomStringUtils.randomAlphabetic(15);
 
     /**
